@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "src", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "3.11.8"
+loguru = "^0.7.2"
+confluent-kafka = "^2.3.0"
+requests = "^2.31.0"
+fastavro = "^1.9.4"
+opensearch-py = "^2.4.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
